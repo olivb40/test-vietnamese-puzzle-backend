@@ -39,7 +39,7 @@ public class PuzzleSolveService {
         long duration = System.currentTimeMillis() - startTime;
 
         Map<String, Object> result = new HashMap<>();
-        result.put("solution", firstSolution.isEmpty() ? null : firstSolution.get(0));
+        result.put("firstSolution", firstSolution.isEmpty() ? null : firstSolution.get(0));
         result.put("durationMs", duration);
         return result;
     }

@@ -70,7 +70,7 @@ class PuzzleSolveServiceTest {
         // Then
         verify(attemptRepository, times(1)).deleteAll();
         assertNotNull(result, "Should not be null");
-        assertTrue(result.containsKey("solution"), "Map should contain 'solution'");
+        assertTrue(result.containsKey("firstSolution"), "Map should contain 'solution'");
         assertTrue(result.containsKey("durationMs"), "Map should contain 'durationMs'");
         // The value of 'solution' might be null if no solution was found
         // or a String with the solution. 'durationMs' should be a Long
