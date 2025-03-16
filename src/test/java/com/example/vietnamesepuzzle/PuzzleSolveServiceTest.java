@@ -27,7 +27,7 @@ class PuzzleSolveServiceTest {
     @Mock
     private AttemptValidation attemptValidation;
 
-    @Mockremoter
+    @Mock
     private AttemptUtils attemptUtils;
 
     @InjectMocks
